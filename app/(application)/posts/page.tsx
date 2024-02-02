@@ -4,7 +4,8 @@ export default function PostsPage() {
   const name = cookies()?.get("user") || { name: "user", value: "User" };
   return (
     <div>
-      <span>{name?.value}</span>
+      <h1>Posts</h1>
+      <p>Welcome, {name.value}!</p>
     </div>
   );
 }
